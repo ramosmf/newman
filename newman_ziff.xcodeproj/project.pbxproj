@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E60D4C315C992E4006A4A1B /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E60D4C215C992E4006A4A1B /* network.c */; };
+		4E60D4C715C9B8ED006A4A1B /* percolation.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E60D4C615C9B8ED006A4A1B /* percolation.c */; };
 		4E9847F815C97EB50073C31B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E9847F715C97EB50073C31B /* main.c */; };
 		4E9847FA15C97EB50073C31B /* newman_ziff.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4E9847F915C97EB50073C31B /* newman_ziff.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E60D4C215C992E4006A4A1B /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
+		4E60D4C515C9AD29006A4A1B /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
+		4E60D4C615C9B8ED006A4A1B /* percolation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = percolation.c; sourceTree = "<group>"; };
+		4E60D4C815C9B91F006A4A1B /* percolation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = percolation.h; sourceTree = "<group>"; };
 		4E9847F315C97EB50073C31B /* newman_ziff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = newman_ziff; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9847F715C97EB50073C31B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		4E9847F915C97EB50073C31B /* newman_ziff.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = newman_ziff.1; sourceTree = "<group>"; };
@@ -61,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				4E9847F715C97EB50073C31B /* main.c */,
+				4E60D4C215C992E4006A4A1B /* network.c */,
+				4E60D4C615C9B8ED006A4A1B /* percolation.c */,
+				4E60D4C815C9B91F006A4A1B /* percolation.h */,
+				4E60D4C515C9AD29006A4A1B /* network.h */,
 				4E9847F915C97EB50073C31B /* newman_ziff.1 */,
 			);
 			path = newman_ziff;
@@ -117,6 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9847F815C97EB50073C31B /* main.c in Sources */,
+				4E60D4C315C992E4006A4A1B /* network.c in Sources */,
+				4E60D4C715C9B8ED006A4A1B /* percolation.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,14 +185,20 @@
 		4E9847FE15C97EB50073C31B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "/opt/local/include/**";
+				LIBRARY_SEARCH_PATHS = "/opt/local/lib/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/opt/local/include/**";
 			};
 			name = Debug;
 		};
 		4E9847FF15C97EB50073C31B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "/opt/local/include/**";
+				LIBRARY_SEARCH_PATHS = "/opt/local/lib/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/opt/local/include/**";
 			};
 			name = Release;
 		};
@@ -203,6 +221,7 @@
 				4E9847FF15C97EB50073C31B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
